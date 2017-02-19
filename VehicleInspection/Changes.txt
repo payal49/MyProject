@@ -1,0 +1,21 @@
+Throw exceptions when false after prints
+Indentation 
+Create isNullOrEmpty and use it
+Make a Utils.java static class and move functions into it like isInt, isNullOrEmpty etc into it and use it
+
+InspectionResult is in 2 places - make it one
+
+
+Fix naming everywhere
+
+getRecommendedInspectionWithoutHistory and withHistory make it private
+
+static RecomendedInspections getRecomendedInspections(vehicleDTO) {
+  check if this has history
+     -- if yes, get from history ones which have failed
+     -- else -- loop through all inspections, and return all of them
+}
+
+performInspections(getRecommendedInspectionWithoutHistory
+
+VehicleInspectionHistory -- map of vehicledto to { arraylist<(inspection, pass/fail, date)> }
