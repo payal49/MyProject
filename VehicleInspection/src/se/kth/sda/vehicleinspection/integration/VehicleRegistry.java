@@ -27,6 +27,7 @@ public class VehicleRegistry {
      * is created for the New Vehicle and Customer Details
      * @param vehicleDTO - Contains the Vehicle Details.
      * @param customerDTO - Contains the Customer Details.
+     * @exception - Vehicle does not exist in Registry.
      */
     public static void ensureVehicleExistsInRegistry(VehicleDTO vehicleDTO, 
         CustomerDTO customerDTO) throws Exception {

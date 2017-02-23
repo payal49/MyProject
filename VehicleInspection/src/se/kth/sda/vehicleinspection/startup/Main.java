@@ -50,7 +50,7 @@ public class Main {
                 System.out.println("Pay by cash or credit card? You entered Cash");
                 Payment c = new CashPayment(cost, cost + 100);
                 controller.pay(c);
-                controller.printPaymentReceipt(c, vehicleDTO2, customerDTO);
+                controller.printPaymentReceipt(c, vehicleDTO1, customerDTO);
                 InspectionResult result1 = controller.inspectVehicle(vehicleDTO1, recommendedInspection);
                 controller.printInspectionReceipt(result1, customerDTO);
 
@@ -60,7 +60,7 @@ public class Main {
                 System.out.println("Pay by cash or credit card? You entered credit card");
                 Payment cc = new CreditCardPayment(creditCardDTO, cost);
                 controller.pay(cc);
-                controller.printPaymentReceipt(cc, vehicleDTO2, customerDTO);
+                controller.printPaymentReceipt(cc, vehicleDTO1, customerDTO);
                 InspectionResult result2 = controller.inspectVehicle(vehicleDTO1, recommendedInspection2);
                 controller.printInspectionReceipt(result2, customerDTO);
 

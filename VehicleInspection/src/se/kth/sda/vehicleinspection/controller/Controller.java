@@ -42,6 +42,7 @@ public class Controller {
      * This method is Check if the Vehicle Number exist in Registry
      * @param vehicleDTO - Contain Vehicle information received from customer
      * @param customerDTO - Contain Customer information received.
+     * @exception e - throws exception vehicle not found.
      */
     public void ensureVehicleExistsInRegistry(VehicleDTO vehicleDTO,CustomerDTO customerDTO) throws Exception {
         try{
