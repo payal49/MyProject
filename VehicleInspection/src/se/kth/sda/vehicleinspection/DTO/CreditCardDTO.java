@@ -9,7 +9,8 @@ import java.time.YearMonth;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubba , Payal , Vimala
+ * The class CreditCardDTO represent Detailed CreditCard information .
  */
 public class CreditCardDTO {
 
@@ -19,6 +20,14 @@ public class CreditCardDTO {
     private String cvv;
     private String pin;
 
+    /**
+     * This is CreditCardDTO Constructor 
+     * @param creditCardNumber - Credit Card Number detail
+     * @param name - Credit Card name detail
+     * @param expiryYearMonth Credit Card expiry detail
+     * @param cvv - Credit Card CVV Number
+     * @param pin - Credit Card pin Number
+     */
     public CreditCardDTO(String creditCardNumber, String name, YearMonth expiryYearMonth, String cvv, String pin) {
         validateCreditCardNumber(creditCardNumber);
         setName(name);
