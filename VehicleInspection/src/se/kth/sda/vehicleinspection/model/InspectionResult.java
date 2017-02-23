@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package se.kth.sda.vehicleinspection.model;
+ package se.kth.sda.vehicleinspection.model;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -30,6 +30,13 @@ public class InspectionResult {
             System.out.println(entry.getKey() + "--" + entry.getValue());
         }
     }
+    
+    public Map<InspectionParts, InspectionResults> getInspectionResult()
+    {
+        return inspectionResult;
+    }    
+    
+    
 
     public SingleVehicleInspectionForSingleDateResults addInspectionResultToVehicleHistory() {
         Date date = new Date();

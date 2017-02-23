@@ -8,6 +8,7 @@ package se.kth.sda.vehicleinspection.controller;
 import se.kth.sda.vehicleinspection.integration.*;
 import se.kth.sda.vehicleinspection.model.*;
 import se.kth.sda.vehicleinspection.DTO.*;
+import se.kth.sda.vehicleinspection.view.InspectionStatsView;
 
 /**
  *
@@ -63,8 +64,11 @@ public class Controller {
 
     public InspectionResult inspectVehicle(VehicleDTO vehicleDTO, RecommendedInspection recommendedInspection) {
         System.out.println("Performing Inspection");
+        InspectionStatsView inspectionStatsView = new InspectionStatsView();
         VehicleInspection vehicleInspection = new VehicleInspection(vehicleDTO, recommendedInspection);
+        vehicleInspection.addObserver(inspectionStatsView);
         InspectionResult res = vehicleInspection.performInspection();
+        
         return res;
     }
     
