@@ -11,7 +11,12 @@ import se.kth.sda.vehicleinspection.DTO.*;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubba , Payal , Vimala
+ * The Controller class calls the method from View(UI)
+ * like moving vehicle to garage , Check if Vehicle exist in Registry
+ * Getting Recommended Inspection Details, Inspection Cost computation,
+ * Pay the Inspection Cost , Print Payment Receipt, Inspect Vehicle,
+ * Print Inspected Result , Moving Vehicle out of garage after Inspection.
  */
 public class Controller {
 

@@ -6,17 +6,26 @@
 package se.kth.sda.vehicleinspection.controller;
 
 /**
- *
- * @author tmpuser-10227
+ * @author - Shubba , Payal , Vimala
+ * The Queue class contains the Queue number and the method for
+ * incrementing next Queue number.
+ * 
  */
 public class Queue {
 
     private int number;
 
+    /**
+     * Queue Constructor 
+     */
     public Queue() {
         number = 0;
     }
 
+    /**
+     * This is method to Increament Queue number
+     * @return Integer value of Incremented number.
+     */
     public int incrementQueueNumber() {
         number++;
         return number;

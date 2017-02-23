@@ -9,14 +9,26 @@ import se.kth.sda.vehicleinspection.DTO.CreditCardDTO;
 
 /**
  *
- * @author tmpuser-10227
+ * @author - Shubba , Payal , Vimala
+ * The class CreditCardAuthorization get the CardCredit Detail 
+ * authorized by external system.
  */
 public class CreditCardAuthorization {
 
+    /**
+     * Credit Card Authorization Constructor
+     */
     public CreditCardAuthorization() {
 
     }
 
+    /**
+     * This method get Credit Card Authorization by calling external 
+     * Authorization System.
+     * @param creditCardDTO - Contains the Credit Card Details
+     * @return - If authorization is sucessful it returns True 
+     *           else if authorization fails it retuns False.
+     */
     public boolean getCreditCardAuthorization(CreditCardDTO creditCardDTO) {
         System.out.println("Credit card authorized. Payment approved");
         return true;

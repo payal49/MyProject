@@ -6,9 +6,24 @@
 package se.kth.sda.vehicleinspection.DTO;
 
 /**
- *
- * @author tmpuser-10227
+ * 
+ * @author - Shubba , Payal , Vimala
+ * The class contains Inspection Result enum
  */
 public enum InspectionResults {
-    PASS, FAIL, NA
+
+    /**
+     * Inspection Result Pass
+     */
+    PASS,
+
+    /**
+     * Inspection Result Fail
+     */
+    FAIL,
+
+    /**
+     * Inspection Result Not Available
+     */
+    NA
 }

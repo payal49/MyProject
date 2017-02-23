@@ -17,6 +17,14 @@ public class VehicleDTO {
     private String model;
     private String color;
 
+    /**
+     *
+     * @param number
+     * @param type
+     * @param brand
+     * @param model
+     * @param color
+     */
     public VehicleDTO(String number, String type, String brand, String model, String color) {
         this.brand = brand;
         this.type = type;
@@ -25,10 +33,18 @@ public class VehicleDTO {
         this.color = color;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNumber() {
         return number;
     }
 
+    /**
+     *
+     * @param number
+     */
     public void setNumber(String number) {
         if (number == null || number.isEmpty()) {
             System.out.println("Invalid vehicle number");
@@ -37,10 +53,18 @@ public class VehicleDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     *
+     * @param type
+     */
     public void setType(String type) {
         if (type == null || type.isEmpty()) {
             System.out.println("Invalid vehicle type");
@@ -49,10 +73,18 @@ public class VehicleDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getBrand() {
         return brand;
     }
 
+    /**
+     *
+     * @param brand
+     */
     public void setBrand(String brand) {
         if (brand == null || brand.isEmpty()) {
             System.out.println("Invalid vehicle brand");
@@ -61,10 +93,18 @@ public class VehicleDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getModel() {
         return model;
     }
 
+    /**
+     *
+     * @param model
+     */
     public void setModel(String model) {
         if (model == null || model.isEmpty()) {
             System.out.println("Invalid vehicle model");
@@ -73,10 +113,18 @@ public class VehicleDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getColor() {
         return color;
     }
 
+    /**
+     *
+     * @param color
+     */
     public void setColor(String color) {
         if (color == null || color.isEmpty()) {
             System.out.println("Invalid vehicle color");
