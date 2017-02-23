@@ -10,7 +10,94 @@ package se.kth.sda.vehicleinspection.DTO;
  * @author tmpuser-10227
  */
 public enum InspectionParts {
-    ENGINE, WHEELS, WINDSHIELDS, LIGHTS, BRAKES, ACCELERATOR, GEARBOX, STEREO,
-    STEERING, CLUTCH, AIRCONDITION, AIRBAGS, BONNET, CARBURATOR, SPEEDOMETER,
-    GPS, PAINT, MIRRORS
+
+    /**
+     *
+     */
+    ENGINE,
+
+    /**
+     *
+     */
+    WHEELS,
+
+    /**
+     *
+     */
+    WINDSHIELDS,
+
+    /**
+     *
+     */
+    LIGHTS,
+
+    /**
+     *
+     */
+    BRAKES,
+
+    /**
+     *
+     */
+    ACCELERATOR,
+
+    /**
+     *
+     */
+    GEARBOX,
+
+    /**
+     *
+     */
+    STEREO,
+
+    /**
+     *
+     */
+    STEERING,
+
+    /**
+     *
+     */
+    CLUTCH,
+
+    /**
+     *
+     */
+    AIRCONDITION,
+
+    /**
+     *
+     */
+    AIRBAGS,
+
+    /**
+     *
+     */
+    BONNET,
+
+    /**
+     *
+     */
+    CARBURATOR,
+
+    /**
+     *
+     */
+    SPEEDOMETER,
+
+    /**
+     *
+     */
+    GPS,
+
+    /**
+     *
+     */
+    PAINT,
+
+    /**
+     *
+     */
+    MIRRORS
 }

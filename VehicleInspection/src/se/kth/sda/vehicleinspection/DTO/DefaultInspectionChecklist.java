@@ -16,12 +16,20 @@ public class DefaultInspectionChecklist {
 
     private Map<InspectionParts, InspectionResults> inspectionPart = new HashMap<>();
 
+    /**
+     *
+     */
     public DefaultInspectionChecklist() {
         for (InspectionParts p : InspectionParts.values()) {
             inspectionPart.put(p, InspectionResults.NA);
         }
     }
 
+    /**
+     *
+     * @param part
+     * @return
+     */
     public InspectionResults getInspectionResult(InspectionParts part) {
         return inspectionPart.get(part);
     }

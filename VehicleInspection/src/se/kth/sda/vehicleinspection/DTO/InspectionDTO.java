@@ -16,6 +16,9 @@ public class InspectionDTO {
 
     private Map<InspectionParts, Float> inspectionPartPrices = new HashMap<>();
 
+    /**
+     *
+     */
     public InspectionDTO() {
         inspectionPartPrices.put(InspectionParts.ENGINE, 100F);
         inspectionPartPrices.put(InspectionParts.WHEELS, 200F);
@@ -37,6 +40,11 @@ public class InspectionDTO {
         inspectionPartPrices.put(InspectionParts.MIRRORS, 200F);
     }
 
+    /**
+     *
+     * @param part
+     * @return
+     */
     public float getInspectionCost(InspectionParts part) {
         return inspectionPartPrices.get(part);
     }

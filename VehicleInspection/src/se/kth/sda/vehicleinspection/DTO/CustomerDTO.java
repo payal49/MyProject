@@ -17,6 +17,14 @@ public class CustomerDTO {
     private String phone;
     private String emailID;
 
+    /**
+     *
+     * @param drivingLicense
+     * @param name
+     * @param address
+     * @param phone
+     * @param email
+     */
     public CustomerDTO(String drivingLicense, String name, AddressDTO address, String phone, String email) {
         this.drivingLicense = drivingLicense;
         this.name = name;
@@ -25,10 +33,18 @@ public class CustomerDTO {
         this.emailID = email;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getDrivingLicense() {
         return drivingLicense;
     }
 
+    /**
+     *
+     * @param drivingLicense
+     */
     public void setDrivingLicense(String drivingLicense) {
         if (drivingLicense == null || drivingLicense.isEmpty()) {
             System.out.println("Invalid driving license");
@@ -37,10 +53,18 @@ public class CustomerDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @param name
+     */
     public void setName(String name) {
         if (name == null || name.isEmpty()) {
             System.out.println("Invalid name");
@@ -49,18 +73,34 @@ public class CustomerDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public AddressDTO getAddress() {
         return address;
     }
 
+    /**
+     *
+     * @param address
+     */
     public void setAddress(AddressDTO address) {
         this.address = address;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPhone() {
         return phone;
     }
 
+    /**
+     *
+     * @param phone
+     */
     public void setPhone(String phone) {
         if (phone == null || phone.isEmpty() || !(isInteger(phone))) {
             System.out.println("Invalid phone number");
@@ -69,10 +109,18 @@ public class CustomerDTO {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getEmailID() {
         return emailID;
     }
 
+    /**
+     *
+     * @param emailID
+     */
     public void setEmailID(String emailID) {
         if (emailID == null || emailID.isEmpty()) {
             System.out.println("Invalid emailID");
@@ -81,6 +129,10 @@ public class CustomerDTO {
         }
     }
 
+     /**
+     *
+     * @param s
+     */
     private boolean isInteger(String s) {
         if (s.isEmpty()) {
             return false;
